@@ -65,7 +65,7 @@ class Extrato:
 
             navegador.find_element(By.CLASS_NAME, 'btn-success').click()
 
-            time.sleep(5)
+            time.sleep(10)
             navegador.find_element(By.CLASS_NAME, 'icon-excel').click()
             time.sleep(5)
 
@@ -209,7 +209,7 @@ class Banco:
         self.codigo = input_cod
 
         botao_entrar = tk.Button(janelacod, text="Entrar", command=santander.entrar_conta)
-        botao_entrar.grid(row=1, column=2, padx=10, pady=10, sticky='nse', columnspan=1)
+        botao_entrar.grid(row=2, column=2, padx=10, pady=10, sticky='nse', columnspan=1)
 
         janelacod.mainloop()
 
